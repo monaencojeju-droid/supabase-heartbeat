@@ -9,7 +9,7 @@ jobs:
   ping:
     runs-on: ubuntu-latest
     steps:
-      - name: Send Request to Supabase
+      - name: Send Activity to Supabase
         run: |
           curl -X POST '${{ secrets.SUPABASE_URL }}/rest/v1/rpc/ping' \
           -H "apikey: ${{ secrets.SUPABASE_SERVICE_KEY }}" \
